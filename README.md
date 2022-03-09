@@ -1,2 +1,2 @@
 # social-proof-section
-frontend mentor social proog section challenge
+frontend mentor social proof section challenge
