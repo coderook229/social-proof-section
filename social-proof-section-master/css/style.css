@@ -1,0 +1,159 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3.5rem;
+  width: 33rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: hsl(333, 80%, 67%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.description {
+  color: hsl(303, 10%, 53%);
+  width: 37rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.ratings{
+  display: flex;
+  flex-direction: column;
+}
+
+.rated {
+  color: hsl(300, 43%, 22%);
+  background-color: hsl(300, 24%, 96%);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: .3rem;
+}
+
+.rated:nth-of-type(2){
+  position: relative;
+  left: 4rem;
+}
+
+.rated:nth-of-type(3){
+  position: relative;
+  left: 7rem;
+}
+
+
+.rated img{
+  margin-right: 1rem;
+}
+
+.testimonials {
+  display: flex;
+}
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem 0;
+  margin: 1rem;
+  border-radius: 0.8rem;
+  width: 31rem;
+  /* /* display: flex; */
+  
+}
+
+.testimonial:nth-of-type(2) {
+  position: relative;
+  top: 2rem;
+}
+
+.testimonial:nth-of-type(3) {
+  position: relative;
+  top: 4rem;
+}
+
+.testimonial-info {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.testimonial-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-paragraph {
+  color: hsl(0, 0%, 100%);
+  width: 27rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-left: 2rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container{
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
